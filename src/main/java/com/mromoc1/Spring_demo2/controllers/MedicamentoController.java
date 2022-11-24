@@ -37,7 +37,7 @@ public class MedicamentoController {
         return medicamentoService.obtenerMedicamentos();
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public void eliminarMedicamento(@PathVariable final String id) {
         medicamentoService.eliminarMedicamento(id);
     }
