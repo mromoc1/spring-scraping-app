@@ -22,7 +22,16 @@ public class Medicamento {
     private String descripcion;
 
     @Field(type=FieldType.Text)
-    private String precio;
+    private String precio_tienda;
+
+    @Field(type=FieldType.Text)
+    private String precio_oferta;
+
+    @Field(type=FieldType.Text)
+    private String precio_online;
+
+    @Field(type=FieldType.Text)
+    private String formato;
 
     @Field(type=FieldType.Text)
     private String ultimo_escaneo;
@@ -39,14 +48,23 @@ public class Medicamento {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public void setPrecio(String precio) {
-        this.precio = precio;
+    public void setPrecioTienda(String precio_tienda) {
+        this.precio_tienda = precio_tienda;
+    }
+    public void setPrecioOferta(String precio_oferta) {
+        this.precio_oferta = precio_oferta;
+    }
+    public void setPrecioOnline(String precio_online) {
+        this.precio_online = precio_online;
     }
     public void setUltimo_escaneo(String ultimo_escaneo) {
         this.ultimo_escaneo = ultimo_escaneo;
     }
     public void setEnlace(String enlace) {
         this.enlace = enlace;
+    }
+    public void setFormato(String formato) {
+        this.formato = formato;
     }
     public String getId() {
         return id;
@@ -57,13 +75,22 @@ public class Medicamento {
     public String getDescripcion() {
         return descripcion;
     }
-    public String getPrecio() {
-        return precio;
+    public String getPrecioTienda() {
+        return precio_tienda;
+    }
+    public String getPrecioOferta() {
+        return precio_oferta;
+    }
+    public String getPrecioOnline() {
+        return precio_online;
     }
     public String getUltimo_escaneo() {
         return ultimo_escaneo;
     }
     public String getEnlace() {
         return enlace;
+    }
+    public String getFormato() {
+        return formato;
     }
 }
