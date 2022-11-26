@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mromoc1.Spring_demo2.models.Medicamento;
-import com.mromoc1.Spring_demo2.repositories.MedicamentoRepository;
+import com.mromoc1.Spring_demo2.repositories.SeleniumScrapingRepository;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,10 +23,10 @@ import java.net.URL;
 @Service
 public class SeleniumScrapingService {
 
-    private final MedicamentoRepository medicamentoRepository;
+    private final SeleniumScrapingRepository seleniumScrapingRepository;
     @Autowired
-    public SeleniumScrapingService(MedicamentoRepository medicamentoRepository) {
-        this.medicamentoRepository = medicamentoRepository;
+    public SeleniumScrapingService(SeleniumScrapingRepository seleniumScrapingRepository) {
+        this.seleniumScrapingRepository = seleniumScrapingRepository;
     }
 
     public void iniciarScraping() {
@@ -43,6 +43,7 @@ public class SeleniumScrapingService {
                 driver.manage().deleteAllCookies();
                 driver.get(jsonArray.getJSONObject(i).getString("url"));
                 List<WebElement> elements = driver.findElements(By.xpath(jsonArray.getJSONObject(i).getString("campo_busqueda")));
+                System.out.println("elements.size() = " + elements.size());
                 for (WebElement element : elements) {
                     Medicamento medicamento = new Medicamento();
                     medicamento.setEnlace(jsonArray.getJSONObject(i).getString("url"));
@@ -84,7 +85,7 @@ public class SeleniumScrapingService {
                     System.out.println(medicamento.getPrecioOnline());
                     System.out.println(medicamento.getFormato());
                     System.out.println("-------------------------------------------------");
-                    medicamentoRepository.save(medicamento);
+                    seleniumScrapingRepository.save(medicamento);
                 }
                 driver.close();
             } catch (Exception e) {

@@ -1,0 +1,48 @@
+{
+            "id": "CSZjrIQB4JmmF9G2Cbl9",
+            "sitio": "salcobrand",
+            "url": "https://salcobrand.cl/t/medicamentos/sistema-cardiovascular",
+            "campo_busqueda": "//div[@class='info']",
+            "campo_nombre": "product-name",
+            "campo_descripcion": "",
+            "campo_precio_tienda": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='original-price']",
+            "campo_precio_oferta": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_precio_online": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_formato": "product-info"
+        },
+        {
+            "id": "CiZjrIQB4JmmF9G2Ork1",
+            "sitio": "salcobrand",
+            "url": "https://salcobrand.cl/t/medicamentos/sistema-digestivo",
+            "campo_busqueda": "//div[@class='info']",
+            "campo_nombre": "product-name",
+            "campo_descripcion": "",
+            "campo_precio_tienda": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='original-price']",
+            "campo_precio_oferta": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_precio_online": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_formato": "product-info"
+        },
+        {
+            "id": "CCZirIQB4JmmF9G2obkT",
+            "sitio": "salcobrand",
+            "url": "https://salcobrand.cl/t/medicamentos/sistema-nervioso",
+            "campo_busqueda": "//div[@class='info']",
+            "campo_nombre": "product-name",
+            "campo_descripcion": "",
+            "campo_precio_tienda": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='original-price']",
+            "campo_precio_oferta": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_precio_online": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_formato": "product-info"
+        },
+        {
+            "id": "ByZgrIQB4JmmF9G2hrmF",
+            "sitio": "salcobrand",
+            "url": "https://salcobrand.cl/t/medicamentos/huesos-y-articulaciones",
+            "campo_busqueda": "//div[@class='info']",
+            "campo_nombre": "product-name",
+            "campo_descripcion": "",
+            "campo_precio_tienda": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='original-price']",
+            "campo_precio_oferta": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_precio_online": ".//div[@class='product-prices']//div[@class='product-inner-prices']//div[@class='sale-price']",
+            "campo_formato": "product-info"
+        },
